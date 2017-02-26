@@ -18,7 +18,7 @@
 					<li><a href="#">Новости</a></li>
 					<li class="active"><a href="price.html">Прайс-лист</a></li>
 					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="user-block">
@@ -43,7 +43,7 @@
 				<div class="inner-column-left">
 					<h2>Мы используем только<br> лучшие средства:</h2>
 					<ul class="list-uncompressed">
-						<li>Baxter of California</li>
+						<li><a href="item.html">Baxter of California</a></li>
 						<li>Mr Natty</li>
 						<li>Suavecito</li>
 						<li>Malin+Goetz</li>
@@ -84,7 +84,7 @@
 			<section class="footer-contacts">
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8<br>
-				<a href="#">Как нас найти?</a><br>
+				<a href="contacts.html#contacts">Как нас найти?</a><br>
 				Телефон: +7 (495) 666-02-66
 			</section>
 			<section class="footer-social">
@@ -99,5 +99,30 @@
 			</section>
 		</div>
 	</footer>
+
+	<div class="modal-overlay"></div>
+	<div class="modal-content-form">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form action="#" class="login-form" method="post">
+			<input type="text" class="icon-user" name="login" placeholder="Логин">
+			<input type="password" class="icon-password" name="password" placeholder="Пароль">
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox-indicator"></span>
+					Запомните меня
+			</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal-content-map">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex-map"></div>
+	</div>
+
+	<script src="js/login.js"></script>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=esb8fUVy7GehtaSWeqqczYWpF9kLpzhJ&amp;width=760&amp;height=520&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=yandex-map"></script>
 </body>
 </html>
